@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   / border: 1px solid blue;
+
+    }
+
+
+body {
+    background-image: url('assets/flower-bg.png');
+}
+/* the main container */
+
+.front-side,
+.back-side {
+  width: 441px;
+  height: 254px;
+  position: relative;
+  /* adjust this to space out the cards */
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:antiquewhite;
+}
+
+/* .front-side{
+} */
+
+.name{
+  display: grid;
+  position: relative;
+  margin-left:30px;
+  padding: 10px
+
+}
+
+.secondary{
+  display: grid;
+  position: relative;
+  margin-left:30px;
+
+}
+
+.icon-container{
+
+  width:50%;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "a b c";
+  grid-gap: 20px;
+}
+
+/* .circle{
+  background-image: url("/assets/circle.svg");
+  grid-area: a;
+} */
+
+
+h3{
+  margin-bottom: 0px;
+  font-family:'Josefin Sans', sans-serif;
+
+}
+
+h5{
+  margin-top: 0px;
+  padding-top: 0px;
+} */
+
+
+/* svg styling */
+/* .st0{display:none;} */
+.st1{display:inline;}
+
+svg{
+  fill:purple;
+}
+
+#icon-fill{
+  fill:none;
+}
+
+
+
+.svg-interaction:hover{
+  fill:rgb(118, 27, 237);
+  opacity: 0.5;
+  animation:pulse; 
+  animation-duration: 2s;
+}
